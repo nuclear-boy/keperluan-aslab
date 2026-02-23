@@ -38,9 +38,6 @@ $$
 
 *Dimana $T$ adalah suhu lingkungan dalam satuan derajat Celcius ($^\circ\text{C}$).*
 
-### 💻 Implementasi Kode Arduino (Jarak)
-Dengan asumsi suhu ruang $25^\circ\text{C}$ ($v = 343 \text{ m/s}$ yang dikonversi menjadi $0.0343 \text{ cm/\mu s}$):
-
 ## 2. Kalibrasi Sensor Suhu (Regresi Linear)
 
 Sensor *low-cost* seperti DHT11 memiliki simpangan bawaan pabrik. Untuk membuat alat ukur yang layak untuk riset, data sensor (DHT11) harus dikalibrasi terhadap data Alat Ukur Referensi (Standar) menggunakan metode **Regresi Linear**.
