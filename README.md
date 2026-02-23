@@ -76,14 +76,12 @@ Untuk mengukur kualitas pembacaan sensor (baik sebelum maupun sesudah dikalibras
 Menghitung seberapa besar simpangan atau melesetnya pembacaan sensor ($T_{sensor}$) terhadap alat ukur standar ($T_{ref}$).
 
 **1. Error Absolut** (Selisih nilai murni):
-$$
-\text{Error Absolut} = T_{sensor} - T_{ref}
-$$
+
+$$\text{Error Absolut} = T_{sensor} - T_{ref}$$
 
 **2. Error Relatif** (Persentase penyimpangan):
-$$
-\text{Error Relatif (\%)} = \left| \frac{T_{sensor} - T_{ref}}{T_{ref}} \right| \times 100\%
-$$
+
+$$\text{Error Relatif (\%)} = \left| \frac{T_{sensor} - T_{ref}}{T_{ref}} \right| \times 100\%$$
 
 ### B. Akurasi (Ketepatan)
 Akurasi menyatakan persentase kedekatan nilai hasil pengukuran sensor dengan nilai yang sebenarnya. Nilai ideal adalah 100%.
