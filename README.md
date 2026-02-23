@@ -36,7 +36,7 @@ $$
 v = 331 + 0.6T
 $$
 
-*Dimana $T$ adalah suhu lingkungan dalam satuan derajat Celcius ($^\circ\text{C}$).*
+Dimana $T$ adalah suhu lingkungan dalam satuan derajat Celcius ($^\circ\text{C}$).
 
 ## 2. Kalibrasi Sensor Suhu (Regresi Linear)
 
