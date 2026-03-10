@@ -119,26 +119,36 @@ void loop() {
 ### 7.2 Sensor Suhu & Kelembapan (DHT11)
 ```cpp
 #include "DHT.h"
-
-#define DHTPIN 2
-#define DHTTYPE DHT11
-
-DHT dht(DHTPIN, DHTTYPE);
+DHT dht(2, DHT11);
 
 void setup() {
   Serial.begin(9600);
   dht.begin();
+  
+  // Memberikan jeda awal agar sensor siap, dan mencetak header
+  Serial.println("Memulai perekaman data...");
 }
 
 void loop() {
+  // 1. Mengambil waktu berjalan Arduino dan mengubahnya ke detik
+  unsigned long waktuDetik = millis() / 1000;
+  
+  // 2. Membaca data dari sensor
   float t = dht.readTemperature();
   float h = dht.readHumidity();
-
-  Serial.print("Temp: ");
+  
+  // 3. Menampilkan Waktu
+  Serial.print("Waktu: "); 
+  Serial.print(waktuDetik); 
+  Serial.print(" s  |  ");
+  
+  // 4. Menampilkan Suhu dan Kelembapan
+  Serial.print("Temp: "); 
   Serial.print(t);
-  Serial.print(" C  Humidity: ");
+  Serial.print(" C  |  Humidity: "); 
   Serial.println(h);
-
+  
+  // Jeda 1 detik sebelum perulangan selanjutnya
   delay(1000);
 }
 ```
